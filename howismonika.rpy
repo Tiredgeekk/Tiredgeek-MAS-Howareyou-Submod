@@ -88,12 +88,13 @@ label how_are_you_monika:
         ]
 
     $ line = random.choice(responses)
-    m "[line]"
+    m 3hub "[line]"
 
     # -------------------------
     # Automatically ask about player
     # -------------------------
-    m "Say… how are YOU? [player]."
+    m 3htb "Say…"
+	m 3ekb "How are YOU? [player]."
     call how_are_you_you
 
     return
@@ -102,16 +103,18 @@ label how_are_you_you:
 
     menu:
         "I'm feeling great!":
-            m "Yay! I'm glad to hear that!"
+            m 7hub "Yay! I'm glad to hear that!"
         "I'm okay.":
-            m "That's good. Thanks for telling me."
+            m 1hub "That's good. Thanks for telling me."
         "Not so good…":
-            m "Oh… I'm here for you, you know that."
+            m 1fkc "Oh… I'm so sorry to hear that. I'm here for you, you know that."
+			m 3kkd "If you need to vent, I'd gladly listen [player].."
         "A little tired.":
-            m "Ah, I understand… maybe you should rest a bit? I'd understand"
+            m 3fku "Ah, I understand… maybe you should rest a bit? I'd understand"
         "A bit hungry.":
-            m "Ooh, want me to make you a snack?"
-	    m "Or.. Maybe I could be your snack?"
-            m "ehe! Just kidding.. But you should see the look on your face..~"
+            m 3gsb "Ooh, want me to make you a snack?"
+	    	m 3gtb "Or.."
+			m 5tsb "Maybe I could be your snack?"
+            m 4hkb "ehe! Just kidding.. But you should see the look on your face..~"
 
     return
